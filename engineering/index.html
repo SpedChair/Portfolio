@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Engineering systems portfolio of William Wayne Spradlin IV." />
+  <title>Engineering | William Wayne Spradlin IV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container topbar">
+      <div class="brand">
+        <h1>William Wayne Spradlin IV</h1>
+        <p>Computational Biomechanics &amp; Systems Engineering</p>
+      </div>
+      <nav class="site-nav">
+        <a href="../">Home</a>
+        <a href="../research/">Research</a>
+        <a class="active" href="./">Engineering</a>
+        <a href="../leadership/">Leadership</a>
+        <a href="../dashboard/">Dashboard</a>
+        <a href="../contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" data-tabs>
+    <section class="hero reveal">
+      <h2>Engineering</h2>
+      <p>System implementation work across robotics, embedded controls, and industrial automation with deterministic communication requirements.</p>
+    </section>
+
+    <section class="reveal">
+      <div class="tabs">
+        <button class="tab-btn active" data-target="robotics">Robotics</button>
+        <button class="tab-btn" data-target="embedded">Embedded Systems</button>
+        <button class="tab-btn" data-target="industrial">Industrial Automation</button>
+      </div>
+
+      <div id="robotics" class="tab-panel active">
+        <div class="grid-2">
+          <article class="card">
+            <h3>Line-Following Robot</h3>
+            <p class="meta"><strong>Role:</strong> Designer &amp; Programmer</p>
+            <p>Built an autonomous path-following robot using IR sensing and real-time correction logic.</p>
+            <p class="muted"><strong>Systems Involved:</strong> Sensor integration, closed-loop control, embedded logic.</p>
+            <div class="tags">
+              <span class="tag">Robotics</span><span class="tag">Control Logic</span><span class="tag">IR Sensing</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Trash Collecting, Sorting, and Dumping Robot</h3>
+            <p class="meta"><strong>Role:</strong> Senior Capstone Engineer</p>
+            <p>Engineered an autonomous robot for sorting and dumping tasks under ASME Student Design Competition constraints.</p>
+            <p class="muted"><strong>Systems Involved:</strong> Machine vision workflow, motion systems, mechanical-electrical integration.</p>
+            <div class="tags">
+              <span class="tag">ASME SDC</span><span class="tag">Machine Vision</span><span class="tag">Capstone</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div id="embedded" class="tab-panel">
+        <div class="grid-2">
+          <article class="card">
+            <h3>C# WPF Control Interface Enhancement</h3>
+            <p class="meta"><strong>Role:</strong> Co-op Software Engineer</p>
+            <p>Improved responsiveness, event logging, and system integration in production control interfaces.</p>
+            <p class="muted"><strong>Systems Involved:</strong> C#, WPF, PAC Machine Edition integration.</p>
+            <div class="tags">
+              <span class="tag">C#</span><span class="tag">WPF</span><span class="tag">UI Engineering</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>PLC-to-PLC Deterministic Communication</h3>
+            <p class="meta"><strong>Role:</strong> Controls Integration Engineer</p>
+            <p>Developed reliable cross-controller data exchange logic for synchronized automation workflows.</p>
+            <p class="muted"><strong>Systems Involved:</strong> PLC programming, deterministic timing, communication validation.</p>
+            <div class="tags">
+              <span class="tag">PLC</span><span class="tag">Determinism</span><span class="tag">Validation</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div id="industrial" class="tab-panel">
+        <div class="grid-2">
+          <article class="card">
+            <h3>PROFINET Multi-Vendor Test Bed</h3>
+            <p class="meta"><strong>Role:</strong> Industrial Systems Engineer Co-op</p>
+            <p>Designed and assembled a cross-vendor test platform for training, customer demos, and interoperability testing.</p>
+            <p class="muted"><strong>Systems Involved:</strong> Siemens, Mitsubishi, Emerson networks and diagnostics.</p>
+            <div class="tags">
+              <span class="tag">PROFINET</span><span class="tag">Interoperability</span><span class="tag">Diagnostics</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>KPI Tracking for Order Management</h3>
+            <p class="meta"><strong>Role:</strong> Process Optimization Developer</p>
+            <p>Built KPI tracking software to flag orders missing promise dates and improve schedule reliability.</p>
+            <p class="muted"><strong>Systems Involved:</strong> Operations analytics, reporting logic, process optimization.</p>
+            <div class="tags">
+              <span class="tag">KPI Systems</span><span class="tag">Automation</span><span class="tag">Ops</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>PROFINET Setup &amp; Troubleshooting Guide</h3>
+            <p class="meta"><strong>Role:</strong> Technical Documentation Lead</p>
+            <p>Authored implementation and maintenance guidance for communication mapping, diagnostics, and error handling.</p>
+            <p class="muted"><strong>Systems Involved:</strong> PROFINET configuration, network diagnostics, maintenance workflows.</p>
+            <div class="tags">
+              <span class="tag">Documentation</span><span class="tag">Networking</span><span class="tag">Field Support</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>Salem, Virginia</p>
+    <p>Designed &amp; Built by William Wayne Spradlin IV</p>
+    <p>Waveform Analysis • Embedded Systems • Deterministic Networks</p>
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>

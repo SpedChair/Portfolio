@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Project tracker dashboard for William Wayne Spradlin IV." />
+  <title>Dashboard | William Wayne Spradlin IV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container topbar">
+      <div class="brand">
+        <h1>William Wayne Spradlin IV</h1>
+        <p>Computational Biomechanics &amp; Systems Engineering</p>
+      </div>
+      <nav class="site-nav">
+        <a href="../">Home</a>
+        <a href="../research/">Research</a>
+        <a href="../engineering/">Engineering</a>
+        <a href="../leadership/">Leadership</a>
+        <a class="active" href="./">Dashboard</a>
+        <a href="../contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" data-dashboard>
+    <section class="hero reveal">
+      <h2>Project Dashboard</h2>
+      <p>Track active systems work, capability growth direction, and cross-domain skills being developed per project.</p>
+    </section>
+
+    <section class="reveal">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="All">All</button>
+        <button class="filter-btn" data-filter="Research">Research</button>
+        <button class="filter-btn" data-filter="Industrial">Industrial</button>
+        <button class="filter-btn" data-filter="Robotics">Robotics</button>
+      </div>
+
+      <div class="dashboard-grid">
+        <article class="card project-tile" data-category="Research" data-name="Drop Jump Wait-Time Study" data-role="Lead Study Developer" data-summary="Biomechanics study on how protocol wait windows influence drop-jump performance signals and neuromuscular timing." data-status="Active data collection and preprocessing" data-goals="Quantify timing-condition impacts on landing and concentric metrics" data-next="Complete condition-specific statistical comparison and finalize result visuals" data-devskills="Signal processing, statistical modeling, research communication" data-growth="Higher confidence in experimental design and reproducible analysis pipelines">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+            <div>
+              <h3>Drop Jump Wait-Time Study</h3>
+              <p class="muted">Research</p>
+              <p class="muted"><strong>Role:</strong> Lead Study Developer</p>
+            </div>
+            <div class="progress-ring" data-progress="78"><span>0%</span></div>
+          </div>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">OpenCap</span><span class="tag">Force Plates</span>
+          </div>
+        </article>
+
+        <article class="card project-tile" data-category="Industrial" data-name="PROFINET Multi-Vendor Test Bed" data-role="Industrial Systems Engineer Co-op" data-summary="Cross-vendor PROFINET platform for interoperability validation, engineer training, and customer communication workflows." data-status="Operational and used for demonstrations" data-goals="Expand validation scenarios for additional industrial topologies" data-next="Add stress-case diagnostics suite and standard acceptance scripts" data-devskills="Deterministic networking, troubleshooting, controls communication" data-growth="Improved reliability engineering and cross-vendor system integration capability">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+            <div>
+              <h3>PROFINET Multi-Vendor Test Bed</h3>
+              <p class="muted">Industrial</p>
+              <p class="muted"><strong>Role:</strong> Industrial Systems Engineer Co-op</p>
+            </div>
+            <div class="progress-ring" data-progress="90"><span>0%</span></div>
+          </div>
+          <div class="tags">
+            <span class="tag">PROFINET</span><span class="tag">PLC</span><span class="tag">Diagnostics</span>
+          </div>
+        </article>
+
+        <article class="card project-tile" data-category="Industrial" data-name="KPI Tracking for Order Management" data-role="Process Optimization Developer" data-summary="KPI monitoring tool to detect missing promise dates and improve scheduling reliability in order management." data-status="Deployed for internal process visibility" data-goals="Increase forecasting consistency and reduce late schedule flags" data-next="Integrate predictive trigger thresholds and dashboard summaries" data-devskills="Operations analytics, process optimization, software design" data-growth="Stronger product-thinking approach to industrial software systems">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+            <div>
+              <h3>KPI Tracking for Order Management</h3>
+              <p class="muted">Industrial</p>
+              <p class="muted"><strong>Role:</strong> Process Optimization Developer</p>
+            </div>
+            <div class="progress-ring" data-progress="84"><span>0%</span></div>
+          </div>
+          <div class="tags">
+            <span class="tag">C#</span><span class="tag">KPI</span><span class="tag">Ops</span>
+          </div>
+        </article>
+
+        <article class="card project-tile" data-category="Robotics" data-name="ASME Autonomous Sorting Robot" data-role="Senior Capstone Engineer" data-summary="Autonomous robot system for trash collection, sorting, and dumping under ASME Student Design Competition requirements." data-status="In active capstone development" data-goals="Deliver robust object recognition and repeatable sorting cycle" data-next="Refine reliability under varied object geometry and time constraints" data-devskills="Machine vision, robotics integration, mechanical-electrical systems" data-growth="Broader systems engineering depth from prototype to competition constraints">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+            <div>
+              <h3>ASME Autonomous Sorting Robot</h3>
+              <p class="muted">Robotics</p>
+              <p class="muted"><strong>Role:</strong> Senior Capstone Engineer</p>
+            </div>
+            <div class="progress-ring" data-progress="66"><span>0%</span></div>
+          </div>
+          <div class="tags">
+            <span class="tag">Robotics</span><span class="tag">Vision</span><span class="tag">Integration</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <aside class="slide-panel" aria-label="Project detail panel">
+    <button class="panel-close" aria-label="Close">×</button>
+    <h3 data-panel-title>Drop Jump Wait-Time Study</h3>
+    <p><strong>Role:</strong> <span data-panel-role>Lead Study Developer</span></p>
+    <p><strong>Project Summary:</strong> <span data-panel-summary>Biomechanics study on how protocol wait windows influence drop-jump performance signals and neuromuscular timing.</span></p>
+    <p><strong>Current Status:</strong> <span data-panel-status>Active data collection and preprocessing</span></p>
+    <p><strong>Project Goals:</strong> <span data-panel-goals>Quantify timing-condition impacts on landing and concentric metrics</span></p>
+    <p><strong>Next Steps:</strong> <span data-panel-next>Complete condition-specific statistical comparison and finalize result visuals</span></p>
+    <p><strong>Skills Being Developed:</strong> <span data-panel-skills>Signal processing, statistical modeling, research communication</span></p>
+    <p><strong>Projected Capability Growth:</strong> <span data-panel-growth>Higher confidence in experimental design and reproducible analysis pipelines</span></p>
+  </aside>
+
+  <footer class="footer container">
+    <p>Salem, Virginia</p>
+    <p>Designed &amp; Built by William Wayne Spradlin IV</p>
+    <p>Waveform Analysis • Embedded Systems • Deterministic Networks</p>
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>
