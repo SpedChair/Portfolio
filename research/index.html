@@ -49,6 +49,8 @@
               <span class="stat">204 NCAA Runners</span>
               <span class="stat">2 Championship Meets</span>
               <span class="stat">Regression Modeling</span>
+              <span class="stat">SF R² = 0.477</span>
+              <span class="stat">DF R² = 0.607</span>
               <span class="stat">WCB 2026</span>
             </div>
           </div>
@@ -57,14 +59,20 @@
         <div class="expand-content">
           <h4>Methodology</h4>
           <p class="muted">Observed stride variables from publicly available NCAA championship race videos, modeled SF and DF using multiple linear regression, and used standardized residuals to characterize running styles.</p>
+          <h4>Data Collection</h4>
+          <p class="muted">Sample included 204 NCAA runners from a 2024 D-I championship and a 2021 D-III championship across 800m, 1500m, 5000m, and 10000m events, with each athlete represented once.</p>
           <h4>Analysis Workflow</h4>
           <div class="workflow-diagram">Championship Race Video Observation → SF/DF Variable Extraction → Multiple Linear Regression → Standardized Residual Style Classification → Interpretation</div>
+          <h4>Modeling Framework</h4>
+          <p class="muted">Step frequency model used speed, leg length, sex, and speed×sex interaction. Duty factor model was primarily explained by speed. Standardized residuals were mapped to style bins using a dual-axis residual framework.</p>
           <h4>Key Findings</h4>
           <ul>
             <li>Higher-performing athletes were more likely to use larger steps with longer flight times.</li>
             <li>Lower-performing athletes were more likely to use longer stance times and average step lengths.</li>
-            <li>Findings supported a measurable relationship between stride parameters and race performance.</li>
+            <li>Running style distribution varied by performance level, not by sex or event grouping.</li>
           </ul>
+          <h4>Validation &amp; Limits</h4>
+          <p class="muted">Method checks against elite biomechanical reports showed low SF and DF error. Limits include video measurement constraints, split-based speed approximation, and single-source D-III meet representation.</p>
           <h4>Skills Demonstrated</h4>
           <p class="muted">Biomechanics observation, quantitative modeling, statistical interpretation, and technical research communication.</p>
           <h4>Statistical Controls</h4>
