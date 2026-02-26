@@ -230,7 +230,7 @@ a:hover {
   padding: 0.2rem 0.5rem;
 }
 
-.pipeline {
+.workflow-diagram {
   background: #0b1324;
   border: 1px solid #223149;
   border-radius: 10px;
