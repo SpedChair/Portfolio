@@ -147,10 +147,12 @@ function initDashboard() {
       panel.querySelector('[data-panel-role]').textContent = tile.getAttribute('data-role') || '';
       panel.querySelector('[data-panel-summary]').textContent = tile.getAttribute('data-summary') || '';
       panel.querySelector('[data-panel-status]').textContent = tile.getAttribute('data-status') || '';
+      panel.querySelector('[data-panel-maturity]').textContent = tile.getAttribute('data-maturity') || '';
       panel.querySelector('[data-panel-goals]').textContent = tile.getAttribute('data-goals') || '';
       panel.querySelector('[data-panel-next]').textContent = tile.getAttribute('data-next') || '';
       panel.querySelector('[data-panel-skills]').textContent = tile.getAttribute('data-devskills') || '';
       panel.querySelector('[data-panel-growth]').textContent = tile.getAttribute('data-growth') || '';
+      panel.querySelector('[data-panel-future]').textContent = tile.getAttribute('data-future') || '';
       panel.classList.add('open');
     });
   });
