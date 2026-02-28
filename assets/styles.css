@@ -426,3 +426,84 @@ a:hover {
     display: none;
   }
 }
+
+body.home-minimal {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background: var(--bg-primary);
+}
+
+.home-shell {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  padding: clamp(5rem, 14vh, 10rem) 0 2rem;
+}
+
+.home-core {
+  max-width: 900px;
+}
+
+.home-name {
+  margin: 0;
+  font-size: clamp(2.2rem, 7vw, 5.4rem);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: 0.01em;
+}
+
+.home-title {
+  margin: clamp(1.2rem, 2.8vh, 2rem) 0 0;
+  font-size: clamp(1.25rem, 2.6vw, 2rem);
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.home-subtitle {
+  margin: 0.8rem 0 0;
+  font-size: clamp(0.95rem, 1.6vw, 1.2rem);
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
+}
+
+.home-anchors {
+  margin-top: clamp(2.1rem, 7vh, 4rem);
+  display: grid;
+  gap: 0.85rem;
+  width: fit-content;
+}
+
+.home-anchors a {
+  color: var(--text-primary);
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  letter-spacing: 0.015em;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.home-anchors a:hover {
+  color: var(--accent);
+  transform: translateX(2px);
+}
+
+.home-footer {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 1.1rem 0 1.8rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.home-footer a {
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.home-footer a:hover {
+  color: var(--accent);
+}
