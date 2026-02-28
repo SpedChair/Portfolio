@@ -538,3 +538,29 @@ body.home-minimal {
   font-size: 0.88rem;
   line-height: 1.35;
 }
+
+.skills-page .hero {
+  padding-bottom: 1.6rem;
+}
+
+.skills-page .grid-2 {
+  gap: 1.2rem;
+}
+
+.skills-page .card {
+  padding: 1.35rem;
+}
+
+.skills-page .skill-list {
+  margin-top: 0.55rem;
+  gap: 0.78rem;
+}
+
+.skills-page .skill-link {
+  padding: 0.82rem 0.9rem;
+}
+
+.skills-page .skill-meta {
+  margin-top: 0.33rem;
+  line-height: 1.45;
+}
