@@ -539,6 +539,49 @@ body.home-minimal {
   line-height: 1.35;
 }
 
+.subdued-details {
+  background: #0d182a;
+  border-color: #223149;
+}
+
+.subdued-details summary {
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-weight: 600;
+  list-style: none;
+}
+
+.subdued-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.subdued-details summary::after {
+  content: '▾';
+  float: right;
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+
+.subdued-details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.subdued-content {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  border-top: 1px solid #223149;
+  padding-top: 1rem;
+}
+
+.subdued-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.subdued-content p {
+  margin: 0.35rem 0;
+}
+
 .skills-page .hero {
   padding-bottom: 1.6rem;
 }
