@@ -85,6 +85,23 @@ function initTabs() {
         }
       });
     });
+
+    const hash = window.location.hash;
+    if (hash) {
+      const targetElement = group.querySelector(hash);
+      if (targetElement) {
+        const parentPanel = targetElement.closest('.tab-panel');
+        if (parentPanel) {
+          buttons.forEach(btn => btn.classList.remove('active'));
+          panels.forEach(panel => panel.classList.remove('active'));
+          const targetButton = group.querySelector(`.tab-btn[data-target="${parentPanel.id}"]`);
+          if (targetButton) {
+            targetButton.classList.add('active');
+          }
+          parentPanel.classList.add('active');
+        }
+      }
+    }
   });
 }
 
